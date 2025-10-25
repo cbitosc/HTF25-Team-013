@@ -1,0 +1,17 @@
+{
+  "name": "htf25-team-013",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev:backend": "npm --prefix ./backend run dev",
+    "dev:frontend": "npm --prefix ./frontend run dev",
+    "dev": "concurrently \"npm --prefix ./backend run dev\" \"npm --prefix ./frontend run dev\"",
+    "smoke": "node ./backend/scripts/smokeTest.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "dependencies": {
+    "htf25-team-013": "file:"
+  }
+}
